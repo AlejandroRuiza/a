@@ -1,0 +1,19 @@
+{
+    "name": "now",
+    "version": "1.0.0",
+    "description": "## AUTHORS </br> Alvaro Moreno </br> Alejandro Ruiza </br> Beto Munguia",
+    "main": "background.js",
+    "scripts": {
+        "start": "node src/app.js",
+        "test": "nodemon src/app.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "morgan": "^1.10.0",
+        "now": "^20.1.4"
+    }
+}

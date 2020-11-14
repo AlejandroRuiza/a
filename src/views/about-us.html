@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <%- include(head) %>
+</head>
+
+<body>
+
+    <%- include(navbar) %>
+
+        <main class="about-us center-text contenedor column-organization">
+            <h1>Acerca de Nosotros</h1>
+            <section>
+                <div>
+                    <h2>Quienes Somos</h2>
+                    <p>Somos un grupo de jovenes de Mexicali, Baja California enfocados en la aplicación, adquisición y difusión de conocimineto de diferentes áreas tales como la robótica y la programación. Esto con el proposito de contribuir a la sociedad
+                        a través de la inovación y el emprendimiento. </p>
+                </div>
+                <div>
+                    <img src="images/anonymous.jpg" alt="">
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <h2>Mision y Vision</h2>
+                    <p>Nuestra misión es proporsionar una herramienta confiable, util and precisa para el uso por parte del profesorado en su interacción online con sus estudiantes para sí mejorar la interacción entre ambos y lograr un mejor aprendizaje
+                        en la nueva modalidad.</p>
+                </div>
+                <div>
+                    <img src="images/light-bulb.jpg" alt="">
+                </div>
+            </section>
+        </main>
+
+        <section class="contenedor seccion center-text seccion-memeber">
+            <h2>Members</h2>
+
+            <div class="team-members">
+                <%- include(member_card, {link: '/images/members/alejandro-ruiza.jpg',name: 'Alejandro Ruiza',ocupation: 'Profesor'}); %>
+                    <%- include(member_card, {link: '/images/members/beto-munguia.jpg',name: 'Beto Munguia',ocupation: 'Estudiante Universitario'}); %>
+            </div>
+        </section>
+
+        <%- include(footer) %>
+
+</body>
+
+</html>

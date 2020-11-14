@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Profe</title>
+
+    <%- include(head) %>
+</head>
+
+<body>
+    <%- include(navbar) %>
+        <main class="contenedor center-text">
+
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-header">. . . . . . . . . . .</div>
+                <div class="card-body">
+                    <h5 class="card-title">PASO 1</h5>
+                    <p class="card-text">Genera tu cuestionario con sus respectivas respuestas!</p>
+                </div>
+            </div>
+
+
+            <h1>Cuestionario</h1>
+
+
+            <div id="table-container">
+                <table id="myTable" class="table table-dark table-striped"></table>
+            </div>
+
+            <script src="jquery/jquery-3.3.1.min.js"></script>
+            <script src="popper/popper.min.js"></script>
+            <script src="bootstrap4/js/bootstrap.min.js"></script>
+
+
+            <!--  Plugin DynamicTable -->
+            <script src="scripts/jquery.dynamicTable-1.0.0.js"></script>
+            <script src="scripts/codigo.js" num=0></script>
+
+
+
+
+            <!-- Se selecciona una opcion para la evaluacion al alumnado -->
+
+            <div class="card-body">
+                <h5 class="card-title">PASO 2</h5>
+                <p class="card-text">Selecciona una opción dependiendo el tipo de evaluación que deseas aplicar</p>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">OPCION 1</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Evaluación Aleatoria</h5>
+                            <p class="card-text">Cada una de las preguntas que se dieron de alta seran aplicadas de manera aleatoria a los alumnos del curso, los resultados de dicha evaluación podra ser observada por el docente por medio de una tabla de puntuación.</p>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">Seleccionar</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">OPCION 2</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Evaluación Directa</h5>
+                            <p class="card-text">Cada una de las preguntas que se dieron de alta seran aplicadas por decisión del docente, el maestro tendra el control de enviar la pregunta al estudiante que el desee. Los resultados de dicha evaluación podra ser observada
+                                posteriormente por medio de tablas de resultados.</p>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Seleccionar</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-header">OPCION 3</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Evaluación General</h5>
+                            <p class="card-text">Todas las preguntas que se dieron de alta seran aplicadas a todos los estudiantes presentes en el curso. Los resultados de esta evaluación podran ser observados por medio de una tabla de resultados</p>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio3">Seleccionar</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <%- include(footer) %>
+
+
+</body>
+
+</html>
